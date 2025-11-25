@@ -1,23 +1,24 @@
-/* Analytics */
-#m_state span {
-    visibility: hidden;
+#m_state,
+#m_live_chat,
+#m_boards,
+#m_audience {
     position: relative;
 }
+
+#m_state span,
+#m_live_chat span,
+#m_boards span,
+#m_audience span {
+    opacity: 0;
+}
+
 #m_state::after {
     content: "לוח בקרה";
     position: absolute;
     right: 60px;
     top: 12px;
-    font-family: inherit;
-    color: inherit;
-    font-size: inherit;
 }
 
-/* Inbox */
-#m_live_chat span {
-    visibility: hidden;
-    position: relative;
-}
 #m_live_chat::after {
     content: "תיבת הודעות";
     position: absolute;
@@ -25,10 +26,6 @@
     top: 12px;
 }
 
-/* Pipelines */
-#m_boards span {
-    visibility: hidden;
-}
 #m_boards::after {
     content: "משפכי מכירה";
     position: absolute;
@@ -36,10 +33,6 @@
     top: 12px;
 }
 
-/* Contacts */
-#m_audience span {
-    visibility: hidden;
-}
 #m_audience::after {
     content: "אנשי קשר";
     position: absolute;
