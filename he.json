@@ -1,20 +1,48 @@
-{
-    "last7days": "7 הימים האחרונים",
-    "channels": "ערוצים",
-    "totalContacts": "סך כל אנשי הקשר",
-    "das.newContacts": "אנשי קשר חדשים",
-    "learnMore": "לפרטים נוספים",
-    "Contacts": "אנשי קשר",
-    "Messenger": "מסנג׳ר",
-    "Webchat": "צ׳אט באתר",
-    "Bot Link": "קישור לבוט",
-    "Test Now": "בדוק עכשיו",
-"Inbox": "תיבת הודעות",
-"Pipelines": "משפכי מכירה",
-"AI Center": "מרכז AI",
-"Flows": "תרחישים",
-"Broadcasts": "שידורים",
-"Tools": "כלים",
-"Settings": "הגדרות"
+/* Analytics */
+#m_state span {
+    visibility: hidden;
+    position: relative;
+}
+#m_state::after {
+    content: "לוח בקרה";
+    position: absolute;
+    right: 60px;
+    top: 12px;
+    font-family: inherit;
+    color: inherit;
+    font-size: inherit;
+}
 
+/* Inbox */
+#m_live_chat span {
+    visibility: hidden;
+    position: relative;
+}
+#m_live_chat::after {
+    content: "תיבת הודעות";
+    position: absolute;
+    right: 60px;
+    top: 12px;
+}
+
+/* Pipelines */
+#m_boards span {
+    visibility: hidden;
+}
+#m_boards::after {
+    content: "משפכי מכירה";
+    position: absolute;
+    right: 60px;
+    top: 12px;
+}
+
+/* Contacts */
+#m_audience span {
+    visibility: hidden;
+}
+#m_audience::after {
+    content: "אנשי קשר";
+    position: absolute;
+    right: 60px;
+    top: 12px;
 }
