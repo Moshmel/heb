@@ -4,6 +4,9 @@
 #m_audience {
     position: relative;
 }
+body{
+    background-color: red!important;
+}
 
 #m_state span,
 #m_live_chat span,
